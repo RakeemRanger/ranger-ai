@@ -1,4 +1,4 @@
-from lib.langchain_tools_client import tool
+from ranger.lib.langchain_tools_client import tool
 
 
 @tool
