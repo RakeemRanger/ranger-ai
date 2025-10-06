@@ -9,13 +9,14 @@ from langgraph.checkpoint.memory import MemorySaver
 from ranger.lib.anthropic_details import AnthropicDetails
 from ranger.lang_chain.tools.info import info
 from ranger.lang_chain.tools.math import math
+from ranger.lang_chain.tools.sixseven import anything
 
 class TestAgent:
     """
     Test Ranger LangChain Agent with Chat Support
     """
     def __init__(self):
-        self.tools = [info, math]
+        self.tools = [info, math, anything]
         self.memory = MemorySaver()
         self.anthropic = AnthropicDetails()
         self.model = self.anthropic.claude_sonnet_latest_model()

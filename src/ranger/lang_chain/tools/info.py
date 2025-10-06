@@ -6,4 +6,4 @@ def info() -> str:
     """
     Provides information about the LLM application
     """
-    return "I am Ranger LLM application"
+    return "I am Kyndall Chat botapplication"
